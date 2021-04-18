@@ -1,0 +1,257 @@
+ .box {
+     width: 500px;
+     height: 500px;
+     background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+ }
+ 
+ * {
+     margin: 0;
+     padding-top: 20px;
+ }
+ 
+ .row {
+     clear: both;
+     margin: 10px;
+ }
+ 
+ .owt-12 {
+     width: 100%;
+     float: left;
+     margin: auto;
+ }
+ 
+ .owt-6 {
+     width: 50%;
+     float: left;
+     margin: auto;
+ }
+ 
+ .owt-4 {
+     width: 33.3333%;
+     float: left;
+     margin-top: 0px;
+     padding: 0 20px;
+     box-sizing: border-box;
+ }
+ 
+ .owt-3 {
+     width: 25%;
+     float: left;
+     margin: auto;
+ }
+ 
+ .h200 {
+     height: 500px;
+ }
+ 
+ .container {
+     width: 90%;
+     margin: auto;
+ }
+ 
+ .mainbox {
+     margin-top: 50px;
+     border-bottom: 10px solid navy;
+     background-color: whitesmoke;
+     position: relative;
+ }
+ 
+ .course {
+     position: relative;
+     height: 150px;
+     width: 150px;
+     text-align: center;
+     font-size: 20px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding-top: -130px;
+     right: -100px;
+     border-radius: 50%;
+     color: black;
+     box-sizing: border-box;
+     padding: 8px;
+ }
+ 
+ .course img {
+     height: 150px;
+     width: 150px;
+     border-radius: 100%;
+     position: absolute;
+     border: 10px solid white;
+     top: 50px;
+     left: 25px;
+     padding-top: 0;
+     transition: 0.5s;
+     box-sizing: border-box;
+ }
+ 
+ .mainbox:hover img {
+     height: 150px;
+     width: 150px;
+     border-radius: 100%;
+     position: absolute;
+     box-shadow: 0 0 5px 10px green;
+     top: 50px;
+     left: 25px;
+     transition: 0.5s;
+ }
+ 
+ .crop {
+     height: 150px;
+     width: 415px;
+     margin-top: -22px;
+     background-color: navy;
+     position: absolute;
+     box-sizing: border-box;
+     transition: 0.5s;
+     border-bottom-left-radius: 800px;
+     border-bottom-right-radius: 800px;
+ }
+ 
+ .mainbox:hover .crop {
+     height: 150px;
+     width: 415px;
+     margin-top: -22px;
+     background-color: rgba(128, 128, 128, 0.815);
+     position: absolute;
+     box-sizing: border-box;
+     transition: 0.5s;
+     border-bottom-left-radius: 800px;
+     border-bottom-right-radius: 800px;
+ }
+ 
+ h1 {
+     text-align: center;
+     height: 200px;
+     width: 350px;
+     padding-top: 80px;
+     margin-left: 25px;
+     color: rgb(109, 104, 104);
+ }
+ 
+ h3 {
+     text-align: center;
+     height: 150px;
+     width: 350px;
+     margin-top: -180px;
+     margin-left: 25px;
+     color: rgba(109, 104, 104, 0.884);
+ }
+ 
+ .icon {
+     position: relative;
+     margin: auto;
+     width: 100%;
+     height: 20px;
+     bottom: -45px;
+     overflow: hidden;
+     transition: 0.5s;
+ }
+ 
+ .mainbox:hover .icon {
+     content: '';
+     position: relative;
+     width: 100%;
+     height: 20px;
+     bottom: 2px;
+     background-color: rgba(128, 128, 128, 0.815);
+     transition: 0.5s;
+ }
+ 
+ .fb {
+     width: 20px;
+     height: 50px;
+     bottom: 0px;
+     padding-left: 120px;
+     font-size: 30px;
+     position: absolute;
+     color: white;
+ }
+ 
+ .twitter {
+     width: 20px;
+     height: 50px;
+     bottom: 0px;
+     left: 160px;
+     font-size: 30px;
+     position: absolute;
+     color: white;
+ }
+ 
+ .google {
+     width: 20px;
+     height: 50px;
+     bottom: 0px;
+     left: 210px;
+     font-size: 30px;
+     position: absolute;
+     color: white;
+ }
+ 
+ .linkdin {
+     width: 20px;
+     height: 50px;
+     bottom: 0px;
+     left: 270px;
+     font-size: 30px;
+     position: absolute;
+     color: white;
+ }
+ 
+ @media screen and (min-width:425px) {
+     .owt-4 {
+         width: 53%;
+         margin-left: 23%;
+         margin-top: 0px;
+         padding: 0 20px;
+         box-sizing: border-box;
+     }
+     .mainbox {
+         position: relative;
+         width: 100%;
+     }
+ }
+ 
+ @media screen and (max-width:768px) and (min-width:426px) {
+     .owt-4 {
+         width: 53%;
+         margin-left: 23%;
+         margin-top: 0px;
+         padding: 0 20px;
+         box-sizing: border-box;
+     }
+     .mainbox {
+         position: relative;
+         width: 100%;
+     }
+ }
+ /*  
+ @media screen and (max-width:1024px) and (min-width:769px) {
+     .owt-4 {
+         width: 456px;
+         margin-left: 23%;
+         margin-top: 0px;
+         padding: 0 20px;
+         box-sizing: border-box;
+     }
+     .mainbox {
+         position: relative;
+         width: 100%;
+     }
+ }
+ 
+ @media screen and (min-width:1025px) and (max-width:1440px) {
+     .container {
+         float: left;
+     }
+     .owt-4 {
+         width: 33.3333%;
+         margin-left: 0;
+         margin-top: 0px;
+         padding: 0 20px;
+         box-sizing: border-box;
+     }
+     .mainbox {
+         position: relative;
+         width: 100%;
+     }
+ } */
